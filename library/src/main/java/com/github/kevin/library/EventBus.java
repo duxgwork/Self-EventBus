@@ -21,7 +21,7 @@ public class EventBus {
     private Handler mHandler;
     private ExecutorService mExecutorService;
 
-    public EventBus() {
+    private EventBus() {
         cacheMap = new HashMap<>();
         mHandler = new Handler(Looper.getMainLooper());//指定Handler在主线程环境
         mExecutorService = Executors.newSingleThreadExecutor();
